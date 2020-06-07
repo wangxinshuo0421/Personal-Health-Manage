@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_step_count"
+        android:icon="@drawable/tab_step_count_default"
+        android:title="计步" />
+
+    <item
+        android:id="@+id/navigation_diet"
+        android:icon="@drawable/tab_diet_default"
+        android:title="饮食" />
+
+    <item
+        android:id="@+id/navigation_sleep"
+        android:icon="@drawable/tab_sleep_default"
+        android:title="睡眠 " />
+
+    <item
+        android:id="@+id/navigation_my"
+        android:icon="@drawable/tab_my_default"
+        android:title="我的" />
+
+</menu>

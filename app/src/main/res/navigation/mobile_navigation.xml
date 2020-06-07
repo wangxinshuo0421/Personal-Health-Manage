@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_step_count">
+
+    <fragment
+        android:id="@+id/navigation_step_count"
+        android:name="com.example.personal_health_manage.StepCountFragment"
+        tools:layout="@layout/step_count_layout" />
+
+    <fragment
+        android:id="@+id/navigation_diet"
+        android:name="com.example.personal_health_manage.DietFragment"
+        tools:layout="@layout/diet_layout" />
+    <fragment
+        android:id="@+id/navigation_sleep"
+        android:name="com.example.personal_health_manage.SleepFragment"
+        tools:layout="@layout/diet_layout" />
+
+    <fragment
+        android:id="@+id/navigation_my"
+        android:name="com.example.personal_health_manage.MyFragment"
+        tools:layout="@layout/my_layout"/>
+
+
+</navigation>

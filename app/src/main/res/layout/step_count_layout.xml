@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/step_count_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/step_count_text_top"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text=" 今日步数: "
+                android:shadowColor="#00000f"
+                android:shadowDx="8"
+                android:shadowDy="8"
+                android:shadowRadius="1"
+                android:textSize="38sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:background="@drawable/step_count_edittext_background" />
+
+            <TextView
+                android:id="@+id/step_count_text_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/step_count_edittext_background"
+                android:gravity="center_vertical"
+                android:shadowColor="#000000"
+                android:shadowDx="8"
+                android:shadowDy="8"
+                android:shadowRadius="1"
+                android:text=" 过去1小时: "
+                android:textColor="#ffffff"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

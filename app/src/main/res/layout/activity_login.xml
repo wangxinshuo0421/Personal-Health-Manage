@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:fitsSystemWindows="true"
+    android:background="#f5f5f5">
+
+    <ImageView
+        android:id="@+id/imageViewLogin"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        tools:src="@drawable/login_logo" />
+
+    <EditText
+        android:id="@+id/user_id"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:maxLines="1"
+        android:layout_centerVertical="true"
+        android:background="@drawable/rounded_edittext"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/user_password"
+        android:gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入密码"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:layout_below="@id/user_id"
+        android:textSize="20dp"/>
+
+
+    <Button
+        android:id="@+id/button_login_comfirm"
+        android:layout_marginTop="20dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:layout_below="@id/user_password"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/rounded_button" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/button_login_comfirm">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id = "@+id/remember_password"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="记住密码"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/login_textview"
+        android:layout_marginTop="60dp"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_login_comfirm"
+        android:layout_centerHorizontal="true"
+        android:text="欢迎使用个人健康管理应用"
+        android:textColor="#758696"
+        android:textColorHighlight="@color/colorPrimary"/>
+
+
+</RelativeLayout>

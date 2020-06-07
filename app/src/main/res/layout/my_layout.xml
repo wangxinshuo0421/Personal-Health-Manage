@@ -1,0 +1,251 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_background"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5">
+
+                <EditText
+                    android:id="@+id/height"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableLeft="@drawable/height"
+                    android:hint="身高"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/heightUnit"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="CM"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="30sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/weight"
+                android:drawableLeft="@drawable/weight"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="体重"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="30sp"
+                />
+            <EditText
+                android:id="@+id/weightUnit"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="KG"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <EditText
+                    android:id="@+id/high_blood_pressure"
+                    android:drawableLeft="@drawable/blood_pressure"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:hint="高压"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rounded_edittext"
+                    android:textSize="30sp"
+                    />
+                <EditText
+                    android:id="@+id/high_blood_pressureUnit"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/rounded_edittext"
+                    android:hint="mmHG"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/low_blood_pressure"
+                android:drawableLeft="@drawable/blood_pressure"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:hint="低压"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="30sp"
+                />
+            <EditText
+                android:id="@+id/low_blood_pressureUnit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="mmHG"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <EditText
+                android:id="@+id/blood_sugar"
+                android:drawableLeft="@drawable/blood_sugar"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:hint="血糖"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rounded_edittext"
+                android:textSize="30sp"
+                />
+            <EditText
+                android:id="@+id/blood_sugarUnit"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="mmol/L"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/button_Refresh"
+                android:layout_marginTop="20dp"
+                android:textSize="25dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginRight="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="保存/刷新"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_below="@id/user_password"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/rounded_button" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

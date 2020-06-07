@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.personal_health_manage">
+    <!-- 添加网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> <!-- 弹框需要如下权限： -->
+    <uses-permission android:name="android.permission.BODY_SENSORS" /><!-- 计步传感器权限 -->
+
+
+    <uses-feature android:name="android.hardware.sensor.stepcounter"/>
+    <uses-feature android:name="feature:android.hardware.sensor.stepdetector"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TestActivity"></activity>
+        <activity android:name=".FallAsleepAlarmActivity" />
+        <activity android:name=".GetUpAlarmActivity" />
+        <activity android:name=".TimePickerActivity" />
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@drawable/tab_diet_selector" />
+
+        <activity android:name=".InterfaceActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- 计步功能 -->
+        <service
+            android:name=".StepService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 系统启动完成后会调用 -->
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.MEDIA_MOUNTED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.intent.action.ACTION_TIME_TICK" />
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

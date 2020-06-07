@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">健康管理助手</string>
+    <string name="title_activity_interface">InterfaceActivity</string>
+    <string name="ip">192.168.1.5</string>
+</resources>
