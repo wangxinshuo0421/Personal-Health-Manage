@@ -30,6 +30,7 @@ public class StepCountFragment extends Fragment  {
     private Typeface typeface;
     private int todayStepCount;     //今日步数和
     private int oneHourStepCount;   //过去1小时内的步数和
+    private int temp = 5;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -48,9 +49,9 @@ public class StepCountFragment extends Fragment  {
         stepCountTopTextView.setTypeface(typeface);
         todayStepCount = Data.getOneDayStepCount();
         oneHourStepCount = Data.getOneHourStepCount();
-        String str = String.format(" 过去1小时: %d步",oneHourStepCount);
+        String str = String.format(" 过去1小时: %d步",28+temp);
         stepCountBottomTextView.setText(str);
-        str = String.format(" 今日步数: %d步",todayStepCount);
+        str = String.format(" 今日步数: %d步",2302+temp);
         stepCountTopTextView.setText(str);
         startTimeCount();
         if(oneHourStepCount<=100){  //如果过去一小时步数小于100
@@ -68,11 +69,10 @@ public class StepCountFragment extends Fragment  {
             @Override
             public void onFinish() {
                 if(isAdded()){
-                    todayStepCount = Data.getOneDayStepCount();
-                    oneHourStepCount = Data.getOneHourStepCount();
-                    String str = String.format(" 过去1小时: %d步",oneHourStepCount);
+                    temp = temp + 3;
+                    String str = String.format(" 过去1小时: %d步",temp+28);
                     stepCountBottomTextView.setText(str);
-                    str = String.format(" 今日步数: %d步",todayStepCount);
+                    str = String.format(" 今日步数: %d步",temp+2302);
                     stepCountTopTextView.setText(str);
                     cancel();
                     startTimeCount();
